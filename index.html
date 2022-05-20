@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="hanzalDuality.png">
+    
+    <title>Hanzalátor</title>
+    <script src="script.js"></script>
+    <style>
+        *{
+            user-select: none;
+        }
+        #center{
+            text-align: center;
+            margin-top: 10%;
+          
+            top: 100;
+        }
+        #main{
+            position: relative;
+        }
+        #side{
+            position: relative;
+            margin-left: -10%;
+            margin-top: -10vw;
+        }
+        #sider{
+           float: right;
+            margin-left: 60vw;
+            margin-top: -10vw;
+        }
+      
+        #gen {
+        position: absolute;
+        z-index: 999;
+        margin: 0 auto;
+        left: 0%;
+        right: 0;
+        top: 15%;
+        height: 100%;
+        text-align: center;
+        width:100%; 
+        font-size: 5vh;
+        overflow-wrap: break-word;
+        color: white;
+        
+}
+          body{
+                background-color: rgb(23, 5, 51);
+             }
+
+        #bubble{
+            position: absolute;
+            background-color: blue;
+            width: 50%;
+            min-height: 27vh;/*20%*/
+            top: 10vw;
+            left: 25%;
+            align-self: center;
+
+        }
+        h1{
+            color: #ffffff; font-family: 'Raleway',sans-serif; font-size: 62px; font-weight: 800; line-height: 72px; margin: 0 0 24px; text-align: center; text-transform: uppercase;
+        }
+        #st{
+            font-size: 1.2rem;
+         background: rgb(12, 25, 90);
+             color: rgb(255, 255, 255);
+         overflow-wrap: break-word;
+             border-radius: 8px;
+               text-align: center;
+             position: relative;
+        }
+        #tut{
+            font-size: 1.2rem;
+         background: rgb(12, 25, 90);
+             color: rgb(255, 255, 255);
+         overflow-wrap: break-word;
+             border-radius: 8px;
+               text-align: center;
+             position: relative;
+             width: 50%;
+            left: 25%;
+        }
+        
+
+
+        #sel {
+  position: absolute;
+  bottom: 0%;
+  left: 50%;
+  transform: translate(-50%, 500%);
+
+}
+
+#sel select {
+  background-color: #0563af;
+  color: white;
+  padding: 12px;
+  width: 250px;
+  border: none;
+  font-size: 20px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+ -webkit-appearance: button;
+  appearance: button;
+  outline: none;
+}
+
+#sel::before {
+
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 20%;
+  height: 100%;
+  text-align: center;
+  font-size: 28px;
+  line-height: 45px;
+  color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.1);
+  pointer-events: none;
+}
+
+#sel:hover::before {
+  color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+#sel select option {
+  padding: 30px;
+}
+    </style>
+</head>
+<body onload="update();">
+    
+    
+    
+    <h1>Hanzalovátor</h1>
+    <p id="st">Generátor Hanzalova mozkového průjmu, který je nějakým způsobem transformován do slyšitelných slov. Opravdu nepoznáte rozdíl.</p>
+    <div id ="center">  
+        <img src="npcTalk2.png" id="main">
+        <div id="bubble">
+            
+            <p id="gen">Zdravím já jsem Hanzal, majitel krámku s debilníma kecama. Klikni a poslechni si moji skvostnou větu. Taky si můžeš vybrat jakou větu chceš slyšet. Dole.</p>
+        </div>
+        
+    </div>
+  
+    <div id="sel" title="Výběr vět">
+       
+        <select id ="selA">
+          
+            <option value="r">náhodná</option>
+        <option value="0">Nejhorší jsou...</option>
+        <option value="1">Krámek</option>
+        <option value="2">Hajzl</option>
+        <option value="3">... se sešel s...</option>
+        <option value="4">Prezentace</option>
+        <option value="5">chycení</option>
+        <option value="6">Padají...</option>
+        <option value="7">'90</option>
+       
+        <option value="8">kafe</option>
+        <option value="9">proč to chcete udělat?</option>
+        <option value="10">To není možný...</option>
+        <option value="11">Už jste skoro jako...</option>
+        <option value="12">Prezentace na téma</option>
+        <option value="13">NPC</option>
+        <option value="14">Citace</option>
+        <option value="c">Vlastní...</option>
+        </select>
+        
+</div>  
+<div id="sel" title="Vlastní věta">
+    Tutoríál dole
+<input type="text" id="cs">
+
+</div>
+<img id="side" src="npc.png">
+<p id="tut">$n(P) - podstatné jméno 1 . pádu <br> $n[2,4,7]p(P) - podstatné jméno [2,4,7]. pádu<br>(P) - plurál (pro $n a $n7p)<br>$v sloveso<br>Příklad: $n, vlástník krámku s $n7pP</p>
+    <img id="sider" src="npc2.png">
+   <br>
+   <br>
+   <br>
+   <br> <br>
+   <br> <br>
+   <br> <br>
+   <br> <br>
+   <br>
+   <img style=" display: block;
+   margin-left: auto;
+   margin-right: auto;
+   width: 50%;"  src="hanzalDuality.png">
+  
+</body>
+</html>
