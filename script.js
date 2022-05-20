@@ -47,6 +47,7 @@ var names = [
 "Pittr",
 "Volf",
 "Kučera",
+"Mika",
 
 "Mimoň",
 "Čudlík",
@@ -91,6 +92,7 @@ var namesP = [
     "Pittrové",
     "Volfové",
     "Kučerové",
+    "Mikové",
     
     "Mimoni",
     "Čudlíci",
@@ -120,7 +122,7 @@ var noun7p = [
     "respirátorem",
     "uchem",
     "koulí",
-    "hlavvou",
+    "hlavou",
     "marihuanou",
     "konopí",
     "HDDčkamem",
